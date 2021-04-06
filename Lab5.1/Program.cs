@@ -18,38 +18,20 @@ namespace Lab5._1
 
         public string pubName
         {
-            get
-            {
-                return CharName;
-            }
-            set
-            {
-                CharName = value;
-            }
+            get { return CharName; }
+            set { CharName = value; }
         }
 
         public int pubStrength
         {
-            get
-            {
-                return CharStrength;
-            }
-            set
-            {
-                CharStrength = value;
-            }
+            get { return CharStrength; }
+            set { CharStrength = value; }
         }
 
         public int pubIntelli
         {
-            get
-            {
-                return CharIntelligence;
-            }
-            set
-            {
-                CharIntelligence = value;
-            }
+            get { return CharIntelligence; }
+            set { CharIntelligence = value; }
         }
 
         public virtual string Play()
@@ -136,6 +118,7 @@ namespace Lab5._1
             characters.Add(new Warrior("Warrior Three", 3, 4, "Weapon Three"));
             characters.Add(new Wizard("Wizard One", 8, 9, 3, 2));
 
+            Console.WriteLine("Welcome to World of Dev.Buildcraft!");
             foreach (GameCharacter character in characters)
             {
                 Console.WriteLine(character.Play());
